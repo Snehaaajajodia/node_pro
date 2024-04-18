@@ -1,6 +1,8 @@
 const mongoose=require("mongoose");
 // define url
-const mongourl='mongodb://localhost:27017/snehadatabase';            
+// const mongourl='mongodb://localhost:27017/snehadatabase';            
+const mongourl='mongodb+srv://Snehajajodia:<4jfSfAgIb7oyjqK9>@cluster0.yle4a4b.mongodb.net/';
+
 mongoose.connect(mongourl,{
     useNewUrlParser:true,
     useUnifiedTopology:true, 
@@ -17,5 +19,7 @@ db.on('disconnected',()=>{
     console.log("Mongodb disconnected");
 });
 
-// export the database connection
+// export the database connection 
 module.exports=db;
+// i made a change 
+// i made a change for check purpose

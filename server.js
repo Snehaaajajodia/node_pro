@@ -1,4 +1,4 @@
-// function add(a,b){
+// function add(a,b){ 
 //     return a+b};
 // var result =add(2,3);
 // console.log(result);
@@ -108,7 +108,7 @@ app.use('/menu',menuroutes);
 
 app.listen(4000,()=>{
     console.log('server is working')
-}); 
+});  
 
 
 
