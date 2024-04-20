@@ -1,7 +1,8 @@
 const mongoose=require("mongoose");
+require('dotenv').config();
 // define url
 // const mongourl='mongodb://localhost:27017/snehadatabase';            
-const mongourl='mongodb+srv://Snehajajodia:<4jfSfAgIb7oyjqK9>@cluster0.yle4a4b.mongodb.net/';
+const mongourl=process.env.MONGO_URL;
 
 mongoose.connect(mongourl,{
     useNewUrlParser:true,
@@ -23,3 +24,4 @@ db.on('disconnected',()=>{
 module.exports=db;
 // i made a change 
 // i made a change for check purpose
+// i made again change to identify

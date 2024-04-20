@@ -69,8 +69,10 @@ const app = express();
 const db=require('./db')
 const person=require('./models/person');
 const menu=require('./models/menu');
+require('dotenv').config();
 const bodyparser=require('body-parser');
 app.use(bodyparser.json());
+const PORT=process.env.PORT ||4000;
 
 
 // respond with "hello world" when a GET request is made to the homepage
@@ -106,7 +108,7 @@ const menuroutes=require('./routes/menuroutes');
 app.use('/menu',menuroutes);
 
 
-app.listen(4000,()=>{
+app.listen(PORT,()=>{
     console.log('server is working')
 });  
 
